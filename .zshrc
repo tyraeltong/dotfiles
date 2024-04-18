@@ -24,7 +24,7 @@ COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-flow brew autojump gem history-substring-search rails3 osx)
+plugins=(git autojump history-substring-search zsh-autosuggestions zsh-syntax-highlighting fast-syntax-highlighting zsh-autocomplete)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -77,3 +77,7 @@ alias pru="rvm ruby-1.9.2-p180 exec pru"
 alias flushmemcache="echo 'flush_all' | nc 127.0.0.1 11211"
 alias rake="noglob rake"
 export PROMPT_COMMAND=""
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
