@@ -41,4 +41,13 @@ sudo apt install -y piper
 ```
 
 ## Docker
+Follow official guide
 
+## Wechat
+Install wine version, install winetricks, then install fonts. 
+There will be a WeChat.desktop created on ~/Desktop, edit it so the EXEC is something like this:
+Exec=env WINEDEBUG=-all LC_ALL="zh_CN.utf8" LANG="zh_CN.utf8" wechat
+
+## keymapping
+It's annoying that the keybinding between Mac and Linux is different especially for the Command/Super key.
+Use [kinto.sh](www.kinto.sh) to remap your keybinding for consistency.
